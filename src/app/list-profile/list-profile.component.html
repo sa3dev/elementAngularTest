@@ -1,0 +1,5 @@
+<ul   *ngFor="let item of tabProfiles">
+    <li appDetailProfile (click)="detail.showAsElement(item.profile)">
+        {{ item.name }}
+    </li>
+</ul> 

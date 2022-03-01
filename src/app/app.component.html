@@ -1,0 +1,32 @@
+
+<h1>Profiles: </h1>
+
+<app-list-profile ></app-list-profile>
+
+<div class="remarque">
+    <button (click)="show = !show">  {{ show ? 'Hide ' : 'Check' }}  </button>
+
+    <div class="remarque-detail" *ngIf="show">
+        <p>Le but de cet exercice est de travailler sur les composant dynamique</p>
+        <p>Ici lors du click sur l'un des noms de la liste un composant est creer dynamiquement avec son 'profile' qui s'affiche</p>
+        <p>On a pour cela creer un custom element a partir d'un composant</p>
+        <p>la directive sert ici avec le click sur l'element: on récupère sa viewRef qu'on utilisera par la suite</p>
+    </div>
+</div>
+
+
+<hr><br><br>
+<input #input placeholder="Message..." value="Message">
+<button type="button" (click)="showPopup(input)" >Show as element</button>
+
+<!-- 
+    <input #input value="Message">
+    <button type="button" (click)="popup.showAsComponent(input.value)">Show as component</button>
+    <button type="button" (click)="popup.showAsElement(input.value)">Show as element</button>
+
+    <hr />
+    <br />
+
+    <app-my-post-banner ></app-my-post-banner> 
+-->
+

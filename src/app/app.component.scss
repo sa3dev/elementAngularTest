@@ -1,0 +1,21 @@
+:host { 
+    .remarque {
+
+        button {
+            background-color: saddlebrown;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        width: 90%;
+        margin: 0 auto;
+
+        &-detail {
+            background-color: beige;
+            font-size: 15px;
+            padding: 10px;
+        }
+    }
+}
